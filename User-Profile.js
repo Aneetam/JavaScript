@@ -1,15 +1,17 @@
 let profileDetails = {
-    imgSrc: "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/user-profile-img.png",
+    imgSrc: "https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/user-profile-img.png",
     name: "RAHUL ATTULURI",
     age: 25
 };
-let imgContainerElement = document.getElementById("imgContainer");
-let profileContainerElement = document.getElementById("profileContainer");
 
+let profileContainerElement = document.getElementById("profileContainer");
+profileContainerElement.classList.add("text-center", "d-flex", "flex-column", "justify-content-center");
+
+let imgContainerElement = document.getElementById("imgContainer");
 let imageElement = document.createElement("img");
 imageElement.src = profileDetails.imgSrc;
 imageElement.classList.add("profile-picture");
-imgContainerElement.classList.add("profile-picture-container");
+
 imgContainerElement.appendChild(imageElement);
 
 let headingElement = document.createElement("h1");
