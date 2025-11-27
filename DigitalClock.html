@@ -26,16 +26,13 @@
 
         setInterval(() => {
         let currentTime = new Date();
-        hrs.innerHTML = currentTime.getHours();
-        mins.innerHTML = currentTime.getMinutes();
-        sec.innerHTML = currentTime.getSeconds();
+        hrs.innerHTML = (currentTime.getHours() < 10 ? "0" :"") + currentTime.getHours();
+        mins.innerHTML = (currentTime.getMinutes < 10 ? "0" :"") + currentTime.getMinutes();
+        sec.innerHTML = (currentTime.getSeconds()< 10 ? "0" :"") + currentTime.getSeconds();
             
         }, 1000);
 
-        let currentTime = new Date();
-        hrs.innerHTML = currentTime.getHours();
-        mins.innerHTML = currentTime.getMinutes();
-        sec.innerHTML = currentTime.getSeconds();
+
     </script>
 </body>
 </html>
